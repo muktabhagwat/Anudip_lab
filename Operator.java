@@ -1,4 +1,11 @@
 package practice;
+/* Que 1)Write a program to accept choice from the user and display the output
+	1.Arithmetic operator
+	2.Logical Operator
+	3.Relational Operator
+	4.Bitwise Operator
+	5.Conditional Operator
+	6.Assignment Operator*/
 import java.util.Scanner; 
 public class Operator {
 
