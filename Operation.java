@@ -12,7 +12,7 @@ public class Operation {
 
 	public static void main(String[] args) {
 		Scanner sc =new Scanner(System.in);
-		int age,choice,num1,num2,num3;
+		int choice,num1,num2,num3;
 		
 		System.out.println("\nEnter your choice for select gender\n1.Find out greater between 3 NO\r\n2.Check given no is even or odd\r\n3.Check the given character is vowel or not\r\n4.check the given no is divible by 5 or not\r\n5.Exit");
 		choice=sc.nextInt();//choice for choosing choice
@@ -81,6 +81,7 @@ public class Operation {
 			break;
 			
 		}
+		sc.close();
 	}
 
 }
