@@ -15,13 +15,13 @@ public class Operation {
 		int age,choice,num1,num2,num3;
 		
 		System.out.println("\nEnter your choice for select gender\n1.Find out greater between 3 NO\r\n2.Check given no is even or odd\r\n3.Check the given character is vowel or not\r\n4.check the given no is divible by 5 or not\r\n5.Exit");
-		choice=sc.nextInt();
+		choice=sc.nextInt();//choice for choosing choice
 		System.out.println("Enter the value 1");
-		num1=sc.nextInt();
+		num1=sc.nextInt();//accept value 1
 		System.out.println("Enter the value 2");
-		num2=sc.nextInt();
+		num2=sc.nextInt();//accept value 2
 		System.out.println("Enter the value 3");
-		num3=sc.nextInt();
+		num3=sc.nextInt();//accept value 3
 		switch(choice)
 		{
 		case 1://Find out greater between 3 NO
@@ -30,7 +30,7 @@ public class Operation {
 			 * num2: num3); System.out.println("The greatest number: " + max);
 			 */
 
-			int maximum=num1;
+		
 			if(num1>=num2 && num1>=num3)
 			{
 				System.out.println("maximum number is num 1");
