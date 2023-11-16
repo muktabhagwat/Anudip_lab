@@ -1,5 +1,13 @@
 package practice;
+/*2)Write a program to accept age and gender from the user and check the Rate Of Interest according to condition
 
+age is above 60 then
+Male: 7%
+Female: 7.5%
+
+age is below 60 then
+Male,Female: 5%
+*/
 import java.util.Scanner;
 
 public class RateOfInterest {
