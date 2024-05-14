@@ -1,0 +1,34 @@
+Abstraction and interface
+1.how can we implement multiple inheritance in java
+-using interface we can done multiple inheritance in java
+
+2.Can you create an instance of an abstract class?
+
+3.Difference between abstract class and interface
+1. how can we implement multiple inheritance in java ?
+ - using interface.
+
+2.How can we implement abstractin ? 
+ - using abstract methode by declaring it either abstract class or interface.
+
+
+3.Difference Between Abstract class and Interface .
+ - Abstract class contain both concrete method and Abstract methods    - contain only abstract methods
+ -Absract class does not support multiple inheritance                   - support multiple inheritance  
+
+4.when should we use abstract class ?
+ - When we find an Object with multiple subtypes and among its operation
+ - We will implement operation whose logic is common to all sub types.
+
+5.Which keyword we can use to declare Abstract class and interface?
+ - Abstract class = abstract
+ -interface = interface
+
+6.Can Abstract class is final in java ?
+ -No
+ -
+
+7.What is meant by 'abstract interface' ?
+ - Firstly, an interface is abstract. That means you cannot have any implementation in an interface.
+
+8.in interface we can have only static final variable even if we create variable as non static final variable compiler converts into static final variables

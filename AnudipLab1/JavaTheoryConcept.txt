@@ -1,0 +1,405 @@
+1. Java Theory.
+-------------------
+# What is Java :
+ 
+- Java is a programming language and a platform. 
+- Java is a high level, robust, object-oriented and secure programming language.
+- Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. 
+- James Gosling is known as the father of Java.
+- Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.
+
+# Platform: 
+
+- Any hardware or software environment in which a program runs, is known as a platform. 
+- Since Java has a runtime environment (JRE) and API, it is called a platform.
+
+# Java Applications :
+
+- Desktop Applications such as acrobat reader, media player, antivirus, etc.
+- Web Applications such as irctc.co.in, javatpoint.com, etc.
+- Enterprise Applications such as banking applications.
+- Mobile
+- Embedded System
+- Smart Card
+- Robotics
+- Games, etc.
+
+# Java Platforms / Editions :
+
+- There are 4 platforms or editions of Java :
+
+1) Java SE (Java Standard Edition) : 
+- It is a Java programming platform. It includes Java programming APIs such as : 
+- java.lang, java.io, java.net, java.util, java.sql, java.math etc.
+- It includes core topics like OOPs, String, Regex, Exception, Inner classes, Multithreading, I/O Stream, Networking, AWT, Swing, Reflection, Collection, etc.
+
+2) Java EE (Java Enterprise Edition) : 
+- It is an enterprise platform that is mainly used to develop web and enterprise applications. 
+- It is built on top of the Java SE platform. 
+- It includes topics like Servlet, JSP, Web Services, EJB, JPA, etc.
+
+3) Java ME (Java Micro Edition) : 
+- It is a micro platform that is dedicated to mobile applications.
+
+4) JavaFX : 
+- It is used to develop rich internet applications. It uses a lightweight user interface API.
+
+# What is JDK, JRE, and JVM :
+
+1. JVM : 
+
+- JVM (Java Virtual Machine) is an abstract machine. It is called a virtual machine because it doesn't physically exist.
+- It is a specification that provides a runtime environment in which Java bytecode can be executed.
+- It can also run those programs which are written in other languages and compiled to Java bytecode.
+- JVMs are available for many hardware and software platforms.
+- JVM, JRE, and JDK are platform dependent because the configuration of each OS is different from each other.
+- However, Java is platform independent. 
+- There are three notions of the JVM: 
+1. specification
+2. implementation
+3. instance. 
+
+# The JVM performs the following main tasks:
+
+1. Loads code
+2. Verifies code
+3. Executes code
+4. Provides runtime environment
+
+2. JRE :
+
+- JRE is an acronym for Java Runtime Environment.It is also written as Java RTE.
+- The Java Runtime Environment is a set of software tools which are used for developing Java applications.
+- It is used to provide the runtime environment.It is the implementation of JVM. 
+- It physically exists.It contains a set of libraries + other files that JVM uses at runtime.
+
+3. JDK : 
+- JDK is an acronym for Java Development Kit.
+- The Java Development Kit (JDK) is a software development environment which is used to develop Java applications and applets.
+- It physically exists. It contains JRE + development tools.
+- The JDK contains a private Java Virtual Machine (JVM) and a few other resources such as an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), etc. 
+- to complete the development of a Java Application.
+
+# JVM Architecture :
+
+- Let's understand the internal architecture of JVM. 
+- It contains classloader, memory area, execution engine etc.
+
+1) Classloader : 
+- Classloader is a subsystem of JVM which is used to load class files. Whenever we run the java program, it is loaded first by the classloader. 
+- There are three built-in classloaders in Java.
+1. Bootstrap ClassLoader:
+2. Extension ClassLoader:
+3. System/Application ClassLoader:
+ 
+2) Class(Method) Area :
+- Class(Method) Area stores per-class structures such as the runtime constant pool, field and method data, the code for methods.
+
+3) Heap :
+- It is the runtime data area in which objects are allocated.
+
+4) Stack : 
+- Java Stack stores frames. It holds local variables and partial results, and plays a part in method invocation and return.
+- Each thread has a private JVM stack, created at the same time as thread.
+ 
+5) Program Counter Register :
+- PC (program counter) register contains the address of the Java virtual machine instruction currently being executed.
+
+6) Native Method Stack :
+- It contains all the native methods used in the application.
+
+7) Execution Engine
+- It contains:
+1. A virtual processor
+
+2. Interpreter: 
+- Read bytecode stream then execute the instructions.
+
+3. Just-In-Time(JIT) compiler: 
+- It is used to improve the performance. JIT compiles parts of the byte code that have similar functionality at the same time, and hence reduces the amount of time needed for compilation.
+- Here, the term "compiler" refers to a translator from the instruction set of a Java virtual machine (JVM) to the instruction set of a specific CPU.
+
+8) Java Native Interface :
+- Java Native Interface (JNI) is a framework which provides an interface to communicate with another application written in another language like C, C++, Assembly etc. 
+- Java uses JNI framework to send output to the Console or interact with OS libraries.
+ 
+# Java Variables :
+- A variable is a container which holds the value while the Java program is executed. A variable is assigned with a data type.
+- Variable is a name of memory location. There are three types of variables in java:
+1.Local
+2.Instance
+3.Static
+- A variable is the name of a reserved area allocated in memory. In other words, it is a name of the memory location. 
+- It is a combination of "vary + able" which means its value can be changed.
+- EX : int data=50;//Here data is variable  
+
+1) Local Variable :
+- A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists.
+- A local variable cannot be defined with "static" keyword.
+
+2) Instance Variable :
+- A variable declared inside the class but outside the body of the method, is called an instance variable. It is not declared as static.
+- It is called an instance variable because its value is instance-specific and is not shared among instances.
+ 
+3) Static variable :
+- A variable that is declared as static is called a static variable. It cannot be local. You can create a single copy of the static variable and share it among all the instances of the class. 
+- Memory allocation for static variables happens only once when the class is loaded in the memory.
+
+- Example of types of variables :
+public class A  
+{  
+    static int m=100;//static variable  
+    void method()  
+    {    
+        int n=90;//local variable    
+    }  
+    public static void main(String args[])  
+    {  
+        int data=50;//instance variable    
+    }  
+}//end of class
+ 
+
+# Data Types in Java : 
+- Data types specify the different sizes and values that can be stored in the variable. 
+- There are two types of data types in Java:
+1.Primitive data types: 
+- The primitive data types include boolean, char, byte, short, int, long, float and double.
+
+2. Non-primitive data types:
+- The non-primitive data types include Classes, Interfaces, and Arrays.
+
+1. Java Primitive Data Types : 
+- In Java language, primitive data types are the building blocks of data manipulation. 
+- These are the most basic data types available in Java language.
+- There are 8 types of primitive data types:
+
+1. boolean data type : 
+- The Boolean data type is used to store only two possible values: true and false.
+- Ex : Boolean one = false 
+
+2. byte data type :
+- The byte data type is an example of primitive data type. It isan 8-bit signed two's complement integer. 
+- Its value-range lies between -128 to 127 (inclusive).
+- Its minimum value is -128 and maximum value is 127. Its default value is 0.
+- Ex : byte a = 10, byte b = -20 
+
+3. char data type :
+- The char data type is a single 16-bit Unicode character. Its value-range lies between '\u0000' (or 0) to '\uffff' (or 65,535 inclusive).
+- The char data type is used to store characters.
+- EX : char letterA = 'A' 
+
+4. short data type:
+- The short data type is a 16-bit signed two's complement integer. Its value-range lies between -32,768 to 32,767 (inclusive). 
+- Its minimum value is -32,768 and maximum value is 32,767. 
+- Its default value is 0.
+- Ex : short s = 10000, short r = -5000  
+
+
+5. int data type :
+- The int data type is a 32-bit signed two's complement integer.
+- Its value-range lies between - 2,147,483,648 (-2^31) to 2,147,483,647 (2^31 -1) (inclusive). 
+- Its minimum value is - 2,147,483,648and maximum value is 2,147,483,647. 
+- Its default value is 0.
+- Ex : int a = 100000, int b = -200000
+
+6. long data type : 
+- The long data type is a 64-bit two's complement integer. Its value-range lies between -9,223,372,036,854,775,808(-2^63) to 9,223,372,036,854,775,807(2^63 -1)(inclusive). 
+- Its minimum value is - 9,223,372,036,854,775,808and maximum value is 9,223,372,036,854,775,807. 
+- Its default value is 0.
+- EX : long a = 100000L, long b = -200000L 
+
+7. float data type :
+- The float data type is a single-precision 32-bit IEEE 754 floating point.Its value range is unlimited. 
+- It is recommended to use a float (instead of double) if you need to save memory in large arrays of floating point numbers. 
+- Its default value is 0.0F.
+- EX : float f1 = 234.5f  
+
+8. double data type :
+- The double data type is a double-precision 64-bit IEEE 754 floating point. Its value range is unlimited. The double data type is generally used for decimal values just like float.
+- Its default value is 0.0d.
+- Ex : double d1 = 12.3 
+
+# Java Control Statements :
+- Java compiler executes the code from top to bottom.
+- The statements in the code are executed according to the order in which they appear.
+- However, Java provides statements that can be used to control the flow of Java code.
+- Such statements are called control flow statements.
+- It is one of the fundamental features of Java, which provides a smooth flow of program.
+- Java provides three types of control flow statements:
+
+1. Decision Making statements :
+i. if statements
+ii. switch statement
+
+2.Loop statements :
+i. do while loop
+ii. while loop
+iii. for loop
+iv. for-each loop
+
+3. Jump statements :
+i. break statement
+ii. continue statement
+- 
+# Decision-Making statements:
+- As the name suggests, decision-making statements decide which statement to execute and when.
+- Decision-making statements evaluate the Boolean expression and control the program flow depending upon the result of the condition provided.
+- There are two types of decision-making statements in Java :
+1.If statement
+2. switch statement.
+
+1.If Statement :
+
+- In Java, the "if" statement is used to evaluate a condition.
+- The control of the program is diverted depending upon the specific condition.
+- The condition of the If statement gives a Boolean value, either true or false.
+- In Java, there are four types of if-statements given below :
+
+i. Simple if statement
+ii. if-else statement
+iii. if-else-if ladder
+iv.  Nested if-statement
+
+i. Simple if statement:
+- it is the most basic statement among all control flow statements in Java.
+- Boolean expression and enables the program to enter a block of code if the expression evaluates to true.
+- Syntax of if statement :
+	if(condition) 
+	{    
+	statement 1; //executes when condition is true   
+	} 
+
+ii. if-else statement :
+- The if-else statement is an extension to the if-statement, which uses another block of code, i.e., else block.
+- The else block is executed if the condition of the if-block is evaluated as false.
+- Syntax :
+		if(condition) 
+		{    
+		statement 1; //executes when condition is true   
+		}  
+		else
+		{  
+		statement 2; //executes when condition is false   
+		} 
+
+iii. if-else-if ladder :
+- The if-else-if statement contains the if-statement followed by multiple else-if statements.
+- In other words, we can say that it is the chain of if-else statements that create a decision tree where ,
+the program may enter in the block of code where the condition is true.
+- We can also define an else statement at the end of the chain.
+- Syntax of if-else-if statement :
+		if(condition 1) 
+		{    
+		statement 1; //executes when condition 1 is true   
+		}  
+		else if(condition 2) 
+		{  
+		statement 2; //executes when condition 2 is true   
+		}  
+		else 
+		{  
+		statement 2; //executes when all the conditions are false   
+		}  
+	
+iv. Nested if-statement :
+- In nested if-statements, the if statement can contain a if or if-else statement inside another if or else-if statement.
+- Syntax of Nested if-statement :
+		if(condition 1) 
+		{    
+		statement 1; //executes when condition 1 is true   
+		if(condition 2) 
+		{  
+		statement 2; //executes when condition 2 is true   
+		}  
+		else
+		{  
+		statement 2; //executes when condition 2 is false   
+		}  
+		}
+
+2. Switch Statement :
+- In Java, Switch statements are similar to if-else-if statements.
+- The switch statement contains multiple blocks of code called cases and a single case is executed based on the variable which is being switched.
+- The switch statement is easier to use instead of if-else-if statements.
+- It also enhances the readability of the program.
+
+- Points to be noted about switch statement:
+- The case variables can be int, short, byte, char, or enumeration. String type is also supported since version 7 of Java
+- Cases cannot be duplicate
+- Default statement is executed when any of the case doesn't match the value of expression. It is optional.
+- Break statement terminates the switch block when the condition is satisfied.It is optional, if not used, next case is executed.
+- While using switch statements, we must notice that the case expression will be of the same type as the variable. However, it will also be a constant value.
+- Syntax : 
+	switch (expression)
+	{  
+    case value1:  
+     statement1;  
+     break;  
+    .  
+    .  
+    .  
+    case valueN:  
+     statementN;  
+     break;  
+    default:  
+     default statement;  
+	} 
+
+
+2. Loop Statements :
+- In programming, sometimes we need to execute the block of code repeatedly while some condition evaluates to true.
+- However, loop statements are used to execute the set of instructions in a repeated order.
+- The execution of the set of instructions depends upon a particular condition.
+- In Java, we have three types of loops that execute similarly.
+- However, there are differences in their syntax and condition checking time.
+
+i.   for loop
+ii.  while loop
+iii. do-while loop
+
+i. Java for loop :
+- In Java, for loop is similar to C and C++. 
+- It enables us to initialize the loop variable, check the condition, and increment/decrement in a single line of code.
+- We use the for loop only when we exactly know the number of times, we want to execute the block of code.
+- Syntax : 
+		for(initialization, condition, increment/decrement) 
+		{    
+		//block of statements    
+		} 
+		
+ii. Java while loop :
+- The while loop is also used to iterate over the number of statements multiple times.
+- However, if we don't know the number of iterations in advance, it is recommended to use a while loop.
+- Unlike for loop, the initialization and increment/decrement doesn't take place inside the loop statement in while loop.
+- It is also known as the entry-controlled loop since the condition is checked at the start of the loop.
+- If the condition is true, then the loop body will be executed; otherwise, the statements after the loop will be executed.
+- Syntax : 
+		while(condition)
+		{    
+			//looping statements    
+		} 
+		
+iii. Java do-while loop :
+- The do-while loop checks the condition at the end of the loop after executing the loop statements.
+- When the number of iteration is not known and we have to execute the loop at least once, we can use do-while loop.
+- It is also known as the exit-controlled loop since the condition is not checked in advance,
+- The syntax of the do-while loop :
+			do     
+			{    
+			//statements    
+			} while (condition);
+- 	Example : 
+				public class Calculation 
+				{    
+					public static void main(String[] args) 
+					{    
+					// TODO Auto-generated method stub    
+					int i = 0;    
+					System.out.println("Printing the list of first 10 even numbers \n");    
+					do {    
+					System.out.println(i);    
+					i = i + 2;    
+					}while(i<=10);    
+					}    
+				}    
